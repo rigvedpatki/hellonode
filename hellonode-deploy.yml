@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: hellonode
-        image: docker.io/rigvedspatki/hello-node:v7
+        image: docker.io/rigvedspatki/hello-node:v8
         ports:
         - containerPort: 80

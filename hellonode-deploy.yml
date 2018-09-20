@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hellonode
+spec:
+  minReadySeconds: 5
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: hellonode
+    spec:
+      containers:
+        - name: hellonode
+          image: docker.io/rigvedspatki/hello-node:v1
+          ports:
+            - containerPort: 80
